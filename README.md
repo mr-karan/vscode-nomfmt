@@ -8,12 +8,30 @@ _[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?i
 
 ## Requirements
 
-- You must have [`nomad`](https://developer.hashicorp.com/nomad/docs/install) CLI tool installed and available in your system's `PATH`.
+1. **Prerequisites:**
+    - [`nomad`](https://developer.hashicorp.com/nomad/docs/install) CLI tool should be installed and available in your system's `PATH`.
+    - [`HashiCorp.HCL`](https://marketplace.visualstudio.com/items?itemName=HashiCorp.HCL) extension for Visual Studio Code must be installed for syntax highlighting.
+
+2. **VS Code Configuration:**
+    - Set up file associations for syntax highlighting:
+
+```json
+{
+    "files.associations": {
+        "nomad.hcl": "hcl",
+        "*.nomad": "hcl"
+    },
+    "editor.formatOnSave": true
+}
+```
 
 ## Extension Settings
 
-- `nomfmt.enable`: Enable or disable automatic formatting with `nomfmt`. Default is `true`.
+| ID             | Description                                 | Default |
+|----------------|---------------------------------------------|---------|
+| `nomfmt.enable`| Enable/disable nomfmt formatting.           | `true`  |
 
-## Supported File Types
+
+### Supported File Types
 
 `nomfmt` is specifically designed to format `.nomad` and `.nomad.hcl` files. Ensure your job spec files have one of these extensions for the formatter to apply.
