@@ -7,7 +7,7 @@
     "vscode": "^1.82.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -40,6 +40,10 @@
         "pattern": "**/*.{nomad,nomad.hcl}"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mr-karan/vscode-nomfmt.git"
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
