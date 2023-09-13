@@ -2,7 +2,7 @@
   "name": "nomfmt",
   "displayName": "nomfmt",
   "description": "Format Hashicorp Nomad job specs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -45,6 +45,7 @@
     "type": "git",
     "url": "https://github.com/mr-karan/vscode-nomfmt.git"
   },
+  "publisher": "mrkaran",
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",

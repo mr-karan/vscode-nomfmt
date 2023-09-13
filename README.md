@@ -1,5 +1,7 @@
 # nomfmt: Nomad Formatter for VS Code
 
+_[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mrkaran.nomfmt)_
+
 `nomfmt` is a Visual Studio Code extension that integrates `nomad fmt` to provide on-the-fly code formatting for Nomad job spec files written in HCL (HashiCorp Configuration Language).
 
 ![Formatting in action](images/nomfmt-demo.gif)
