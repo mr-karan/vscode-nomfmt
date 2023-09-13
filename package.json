@@ -1,18 +1,34 @@
 {
   "name": "nomfmt",
-  "displayName": "nomfmt",
-  "description": "Format Hashicorp Nomad job specs",
-  "version": "1.0.0",
-  "engines": {
-    "vscode": "^1.82.0"
+  "displayName": "nomfmt: Nomad Formatter",
+  "version": "1.0.1",
+  "publisher": "mrkaran",
+  "description": "Format Hashicorp Nomad job specs using `nomfmt`.",
+  "author": {
+    "name": "mrkaran"
   },
   "categories": [
     "Formatters"
   ],
+  "galleryBanner": {
+    "color": "#5e8d87",
+    "theme": "dark"
+  },
   "activationEvents": [
     "onStartupFinished"
   ],
+  "engines": {
+    "vscode": "^1.82.0"
+  },
   "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
   "contributes": {
     "configuration": {
       "type": "object",
@@ -45,15 +61,10 @@
     "type": "git",
     "url": "https://github.com/mr-karan/vscode-nomfmt.git"
   },
-  "publisher": "mrkaran",
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+  "bugs": {
+    "url": "https://github.com/mr-karan/vscode-nomfmt/issues"
   },
+  "homepage": "https://github.com/mr-karan/vscode-nomfmt/blob/main/README.md",
   "devDependencies": {
     "@types/vscode": "^1.82.0",
     "@types/mocha": "^10.0.1",
@@ -65,5 +76,7 @@
     "mocha": "^10.2.0",
     "typescript": "^5.1.6",
     "@vscode/test-electron": "^2.3.4"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "pricing": "Free"
 }
