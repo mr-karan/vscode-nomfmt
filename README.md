@@ -10,10 +10,8 @@
 
 ## Extension Settings
 
-`nomfmt` is designed to be plug-and-play but offers customization for those who want it:
-
 - `nomfmt.enable`: Enable or disable automatic formatting with `nomfmt`. Default is `true`.
 
 ## Supported File Types
 
-nomfmt is specifically designed to format `.nomad` and `.nomad.hcl` files. Ensure your job spec files have one of these extensions for the formatter to apply.
+`nomfmt` is specifically designed to format `.nomad` and `.nomad.hcl` files. Ensure your job spec files have one of these extensions for the formatter to apply.
