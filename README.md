@@ -18,7 +18,7 @@ _[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?i
 ```json
 {
     "files.associations": {
-        "nomad.hcl": "hcl",
+        "*.nomad.hcl": "hcl",
         "*.nomad": "hcl"
     },
     "editor.formatOnSave": true
